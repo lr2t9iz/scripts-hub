@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Hello World HTA</title>
+    <HTA:APPLICATION ID="HelloWorldApp" />
+    <script type="text/vbscript">
+      Sub Window_OnLoad
+        Dim hostname
+        hostname = CreateObject("WScript.Network").ComputerName
+        Document.getElementById("hostname").innerText = "Hostname: " & hostname
+      End Sub
+    </script>
+  </head>
+  <body onload="Window_OnLoad">
+    <h1>Hello, World!</h1>
+    <p>This is a basic example of an HTA application +VBScript.</p>
+    <p id="hostname"></p>
+  </body>
+</html>
