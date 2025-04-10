@@ -1,4 +1,1 @@
-.env
-.t3mp
-
-*.exe
+t3mp/
